@@ -1,11 +1,44 @@
-export const Home = () => {
+export default function Home() {
   return (
-    <main className="mx-auto max-w-4xl p-8">
-      <h1 className="pb-8 text-center text-4xl font-bold">
-        Home
-      </h1>
-    </main>
-  );
-};
+    <div className="flex-1 bg-base-100 flex flex-col justify-center items-center relative overflow-hidden">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/media/home_vid.mp4" type="video/mp4" />
+      </video>
 
-export default Home;
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      {/* Content */}
+      <div className="max-w-xl px-4 text-center relative z-10">
+        <h1 className="mb-5 text-5xl font-bold text-white">
+          Robot Grabber
+        </h1>
+        <p className="mb-8 opacity-90 text-white">
+          Catch phrase
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="/algorithms" className="btn btn-primary">
+            Algorithms
+          </a>
+          <a href="/robot-architecture" className="btn btn-outline">
+            Architecture
+          </a>
+          <a href="/media" className="btn btn-outline">
+            Media
+          </a>
+          <a href="/team" className="btn btn-secondary">
+            Team
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
