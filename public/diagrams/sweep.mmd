@@ -1,0 +1,10 @@
+flowchart LR
+A[Start sweep] --> B[Save gyro angle]
+B --> C[Turn left small angle]
+C --> D[Read gyro]
+D --> E[Turn right past center]
+E --> F[Read gyro]
+
+F --> G{Unexpected deviation}
+G -->|Yes| H[Obstacle detected]
+G -->|No| I[Path clear]

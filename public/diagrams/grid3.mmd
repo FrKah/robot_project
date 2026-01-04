@@ -1,0 +1,16 @@
+flowchart LR
+A[move_forward] --> B[Compute wheel rotation]
+B --> C[Start motors]
+
+C --> D[While motors running]
+D --> E[Read sonar distance]
+E --> F{Object close}
+
+F -->|Yes| G[Stop motors]
+G --> H[Pick up object]
+H --> I[Exit early]
+
+F -->|No| D
+D --> J{Motors finished}
+J -->|Yes| K[Update position]
+K --> L[Return]

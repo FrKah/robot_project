@@ -1,0 +1,10 @@
+flowchart LR
+A[Start] --> B[Init EV3]
+B --> C[Init motors]
+C --> D[Init sensors]
+D --> E[Robot state init]
+E --> F[Navigate to item]
+F --> G{Holding item}
+G -->|Yes| H[Navigate to box]
+H --> I[Drop object]
+G -->|No| J[End]
