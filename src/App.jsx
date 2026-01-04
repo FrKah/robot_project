@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/robot-architecture" element={<RobotArchitecture />} />
