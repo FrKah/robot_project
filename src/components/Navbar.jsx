@@ -5,7 +5,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar bg-base-200 shadow-sm">
+      <nav className="navbar bg-gradient-to-r from-base-200 via-base-200 to-base-300 shadow-lg backdrop-blur-lg border-b border-primary/20 h-16">
         <div className="navbar-start">
           <h1 className="text-lg font-bold">Team 4</h1>
         </div>
@@ -44,7 +44,7 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop menu */}
-        <section className="navbar-center hidden lg:flex">
+        <section className="navbar-center hidden lg:flex h-full">
           <MenuList />
         </section>
         <menu className="navbar-end hidden lg:flex"></menu>
@@ -61,41 +61,41 @@ export const Navbar = () => {
 
 const MenuList = ({ mobile = false }) => (
   <ul
-    className={`menu ${mobile ? 'menu-vertical w-full items-center p-2' : 'menu-horizontal px-1'}`}
+    className={`menu ${mobile ? 'menu-vertical w-full items-center p-2' : 'menu-horizontal p-0 h-full gap-0'}`}
   >
-    <li className={mobile ? 'w-full' : ''}>
-      <a className={mobile ? 'w-full justify-center' : ''} href="/">
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
+      <a className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'} href="/">
         Home
       </a>
     </li>
-    <li className={mobile ? 'w-full' : ''}>
-      <a className={mobile ? 'w-full justify-center' : ''} href="/robot-architecture">
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
+      <a className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'} href="/robot-architecture">
         Robot Architecture
       </a>
     </li>
-    <li className={mobile ? 'w-full' : ''}>
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
       <a
-        className={mobile ? 'w-full justify-center' : ''}
+        className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'}
         href="/algorithms"
       >
         Algorithms
       </a>
     </li>
-    <li className={mobile ? 'w-full' : ''}>
-      <a className={mobile ? 'w-full justify-center' : ''} href="/code">
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
+      <a className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'} href="/code">
         Code
       </a>
     </li>
-    <li className={mobile ? 'w-full' : ''}>
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
       <a
-        className={mobile ? 'w-full justify-center' : ''}
+        className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'}
         href="/media"
       >
         Media
       </a>
     </li>
-    <li className={mobile ? 'w-full' : ''}>
-      <a className={mobile ? 'w-full justify-center' : ''} href="/team">
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
+      <a className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'} href="/team">
         Team
       </a>
     </li>

@@ -25,16 +25,16 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="/algorithms" className="btn btn-primary">
+          <a href="/algorithms" className="btn btn-primary hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-primary/50">
             Algorithms
           </a>
-          <a href="/robot-architecture" className="btn btn-outline">
+          <a href="/robot-architecture" className="btn btn-outline hover:scale-110 transition-all duration-300 shadow-lg">
             Architecture
           </a>
-          <a href="/media" className="btn btn-outline">
+          <a href="/media" className="btn btn-outline hover:scale-110 transition-all duration-300 shadow-lg">
             Media
           </a>
-          <a href="/team" className="btn btn-secondary">
+          <a href="/team" className="btn btn-secondary hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-secondary/50">
             Team
           </a>
         </div>

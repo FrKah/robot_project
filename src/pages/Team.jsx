@@ -34,13 +34,13 @@ export default function Team() {
           <div
             key={member.name}
             className="card w-64 bg-base-200 shadow-xl rounded-full p-6
-                       hover:scale-105 transition-transform"
+                       hover:scale-105 transition-transform border border-primary/30" 
           >
             <figure className="px-10 pt-10">
               <img
                 src={member.image}
                 alt={member.name}
-                className="rounded-full w-28 h-28 object-cover"
+                className="rounded-full w-28 h-28 object-cover border border-primary/30"
               />
             </figure>
 

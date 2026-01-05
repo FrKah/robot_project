@@ -3,7 +3,7 @@ import { FaGitlab, FaCodeBranch } from "react-icons/fa";
 export default function Code() {
   return (
     <div className="flex-1 bg-base-100 flex items-center justify-center px-4">
-      <div className="card bg-base-200 shadow-2xl max-w-xl w-full">
+      <div className="card bg-base-200 shadow-2xl max-w-xl w-full border border-primary/30">
         <div className="card-body text-center items-center gap-6">
           
           {/* Icon */}
