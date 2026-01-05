@@ -18,10 +18,10 @@ export default function Home() {
       {/* Content */}
       <div className="max-w-xl px-4 text-center relative z-10">
         <h1 className="mb-5 text-5xl font-bold text-white">
-          Robot Grabber
+          Kob-E
         </h1>
         <p className="mb-8 opacity-90 text-white">
-          Catch phrase
+          Placeholder for a catch phrase
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
