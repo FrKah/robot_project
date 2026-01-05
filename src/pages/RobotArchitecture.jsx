@@ -161,11 +161,11 @@ export const RobotArchitecture = () => {
                 The Grabber
               </h2>
               <p className="opacity-80">
-                The grabber is positioned at the front to maximize interaction with objects.
+                We use a pincher-type grabber with rubber wheels at its extremities resulting in improved grip stability and reduced slippage during grasping and transport.
               </p>
               <div className="flex justify-center mt-4">
                 <img 
-                  src="/media/gripper_os_robot.gif" 
+                  src="/media/gripper_rotation.gif" 
                   alt="Grabber mechanism rotating animation" 
                   className="rounded-lg max-w-full h-auto"
                 />

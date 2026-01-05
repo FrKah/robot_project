@@ -8,6 +8,11 @@ const media = [
     title: "Happy Robot"
   },
   {
+    type: "image",
+    src: "/media/gripper_rotation.gif",
+    title: "Grabber Architecture"
+  },
+  {
     type: "video",
     src: "/media/robot-demo.mp4",
     title: "Autonomous navigation demo"
