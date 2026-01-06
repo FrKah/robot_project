@@ -63,20 +63,6 @@ export const Algorithms = () => {
         <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
           <div className="card-body space-y-4">
             <h3 className="text-xl font-semibold">
-              Navigate To Logic
-            </h3>
-            <p className="opacity-70">
-              The robot first aligns on the Y axis, then on the X axis,
-              using gyroscope-based turns and forward motion.
-            </p>
-            <MermaidDiagram src="/diagrams/grid2.mmd" />
-          </div>
-        </div>
-
-        {/* Grid 3 */}
-        <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
-          <div className="card-body space-y-4">
-            <h3 className="text-xl font-semibold">
               Forward Motion with Pickup Interrupt
             </h3>
             <p className="opacity-70">
@@ -91,11 +77,11 @@ export const Algorithms = () => {
 
       {/* SWEEP SECTION */}
       <section className="space-y-10">
-        <h2 className="text-3xl font-semibold fade-in-section">
+        <h2 className="text-3xl font-semibold">
           Obstacle Detection
         </h2>
 
-        <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+        <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
           <div className="card-body space-y-4">
             <h3 className="text-xl font-semibold">
               Gyroscope-Based Sweep Algorithm

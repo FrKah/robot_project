@@ -17,10 +17,10 @@ export default function Home() {
 
       {/* Content */}
       <div className="max-w-xl px-4 text-center relative z-10">
-        <h1 className="mb-5 text-5xl font-bold text-white">
+        <h1 className="mb-5 text-5xl font-bold">
           Kob-E
         </h1>
-        <p className="mb-8 opacity-90 text-white">
+        <p className="mb-8 opacity-90">
           Placeholder for a catch phrase
         </p>
 

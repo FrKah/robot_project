@@ -22,6 +22,11 @@ const media = [
     src: "/media/home_vid.mp4",
     title: "Pickup mechanism"
   },
+  {
+    type: "video",
+    src: "/media/pickup_to_box.mp4",
+    title: "Pickup to box"
+  },
 ];
 
 export default function Media() {
