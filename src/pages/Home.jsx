@@ -9,7 +9,7 @@ export default function Home() {
         loop
         playsInline
       >
-        <source src="/media/home_vid.mp4" type="video/mp4" />
+        <source src="/media/robot_construction.mp4" type="video/mp4" />
       </video>
 
       {/* Dark overlay for text readability */}
