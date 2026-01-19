@@ -1,24 +1,24 @@
 const team = [
   {
     name: "Antoine",
-    role: "Main Dev",
+    role: "Lead Developer & Architect", 
     image: "/team/antoine.png",
     description:
-      "Designed and implemented the grid-based navigation and movement logic."
+      "Spearheaded the code architecture and engineered the core grid-based movement logic."
   },
   {
     name: "Jacem",
-    role: "Architect",
+    role: "Robotics Architect", 
     image: "/team/jacem.jpg",
     description:
-      "Designed the robot architecture and performed tests."
+      "Designed the physical robot architecture and executed competitive testing. Creator of the sweep-based detection algorithm."
   },
   {
     name: "Frédéric",
-    role: "Webdev",
+    role: "Full Stack Developer", 
     image: "/team/frederic.jpg",
     description:
-      "Developed the website"
+      "Built the web interface and implemented crucial movement functions. Often responsible for rapid prototyping and first drafts."
   }
 ];
 

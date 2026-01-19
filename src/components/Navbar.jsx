@@ -87,6 +87,11 @@ const MenuList = ({ mobile = false }) => (
       </a>
     </li>
     <li className={mobile ? 'w-full' : 'h-full flex'}>
+      <a className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'} href="/tutorial">
+        Tutorial
+      </a>
+    </li>
+    <li className={mobile ? 'w-full' : 'h-full flex'}>
       <a
         className={mobile ? 'w-full justify-center' : 'h-full flex items-center px-4 rounded-none'}
         href="/media"

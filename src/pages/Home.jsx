@@ -20,8 +20,8 @@ export default function Home() {
         <h1 className="mb-5 text-5xl font-bold">
           Kob-E
         </h1>
-        <p className="mb-8 opacity-90">
-          Placeholder for a catch phrase
+        <p className="mb-8 text-2xl opacity-90">
+          Slow and steady wins the race
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">

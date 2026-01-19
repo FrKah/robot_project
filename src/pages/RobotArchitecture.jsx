@@ -57,7 +57,7 @@ export const RobotArchitecture = () => {
       </section>
 
       {/* ACTUATION */}
-      <section className="space-y-6">
+      <section className="space-y-10">
         <h2 className="text-3xl font-semibold fade-in-section">
           Actuation System
         </h2>
@@ -87,8 +87,7 @@ export const RobotArchitecture = () => {
               </p>
               <p className="opacity-80">
                 An additional lift motor raises the grabbed object to prevent
-                ground contact during transport, ensuring stable motion while
-                carrying items.
+                ground contact during transport and deliver the object to the box.
               </p>
             </div>
           </div>
@@ -96,8 +95,8 @@ export const RobotArchitecture = () => {
       </section>
 
       {/* SENSORS */}
-      <section className="space-y-6">
-        <h2 className="text-3xl font-semibold fade-in-section">
+      <section className="space-y-10">
+        <h2 className="text-3xl font-semibold">
           Sensor System
         </h2>
 
@@ -134,22 +133,11 @@ export const RobotArchitecture = () => {
               </p>
             </div>
           </div>
-
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
-            <div className="card-body space-y-3">
-              <h3 className="text-xl font-semibold">
-                Color Sensor
-              </h3>
-              <p className="opacity-80">
-                The color sensor is used to detect the kind of object the robot is picking up.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* MECHANICAL DESIGN */}
-      <section className="space-y-6">
+      <section className="space-y-10">
         <h2 className="text-3xl font-semibold fade-in-section">
           Mechanical Design Choices
         </h2>
@@ -178,21 +166,36 @@ export const RobotArchitecture = () => {
                 The Lifter
               </h2>
               <p className="opacity-80">
-                Description of the lifter
+                The lifter is based on a linkage-driven lifting mechanism actuated by a single EV3 motor. Rotational motion from the motor is transmitted to a multi-link articulated structure, which converts rotation into a controlled vertical displacement.
               </p>
+              <div className="flex justify-center mt-4">
+                <img 
+                  src="/media/lifter_rotation.gif" 
+                  alt="Lifter mechanism rotating animation" 
+                  className="rounded-lg max-w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+            <div className="card-body space-y-4">
+              <h2 className="text-2xl font-semibold">
+                The Movement Mechanism
+              </h2>
+              <p className="opacity-80">
+                The movement mechanism is based on a differential drive system using two large EV3 motors connected to the wheels.
+              </p>
+              <div className="flex justify-center mt-4">
+                <img 
+                  src="/media/wheels_rotation.gif" 
+                  alt="Movement mechanism rotating animation" 
+                  className="rounded-lg max-w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* OPTIONAL MEDIA */}
-      <section className="text-center opacity-70">
-        <p>
-          Photos and videos illustrating the mechanical design are available
-          in the Media section.
-        </p>
-      </section>
-
     </main>
   );
 };

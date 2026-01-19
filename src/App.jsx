@@ -7,6 +7,7 @@ import Algorithms from './pages/Algorithms';
 import Code from './pages/Code';
 import Media from './pages/Media';
 import Team from './pages/Team';
+import GitLab from './pages/GitLab';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/robot-architecture" element={<RobotArchitecture />} />
           <Route path="/algorithms" element={<Algorithms />} />
-          <Route path="/code" element={<Code />} />
+          <Route path="/code" element={<GitLab />} />
+          <Route path="/tutorial" element={<Code />} />
           <Route path="/media" element={<Media />} />
           <Route path="/team" element={<Team />} />
         </Routes>

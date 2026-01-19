@@ -96,6 +96,25 @@ export const Algorithms = () => {
         </div>
       </section>
 
+      {/* Strategy */}
+      <header className="text-center space-y-4 text-center fade-in-section">
+        <h2 className="text-5xl mb-8 font-bold">
+          Strategy
+        </h2>
+        <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
+          <div className="card-body space-y-4">
+            <p className="max-w-4xl mx-auto text-lg">
+              The robot follows a dual-purpose strategy combining both defensive and offensive actions.
+            </p>
+            <p className="max-w-4xl mx-auto text-lg">
+              On the defensive side, it relocates cones toward the arena walls, placing them in positions that are difficult or impossible for opponents to reach.
+            </p>
+            <p className="max-w-4xl mx-auto text-lg">
+              Offensively, the robot prioritizes mineral collection by targeting resources with the highest point-to-distance ratio, optimizing efficiency by maximizing score while minimizing travel distance.
+            </p>
+          </div>
+        </div>
+      </header>
     </main>
   );
 };
