@@ -1,0 +1,11 @@
+flowchart LR
+    A[Ore classified valid] --> B[Rotate to average angle]
+
+    B --> C[Advance toward ore]
+    C --> D[Grab object]
+    D --> E[Lift object]
+
+    E --> F[Reverse movements]
+    F --> G[Restore original pose]
+
+    G --> H[Return control to Pilot 1]

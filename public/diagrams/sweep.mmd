@@ -1,10 +1,19 @@
 flowchart LR
-A[Start sweep] --> B[Save gyro angle]
-B --> C[Turn left small angle]
-C --> D[Read gyro]
-D --> E[Turn right past center]
-E --> F[Read gyro]
+    A[Start angular sweep] --> B[Rotate left/right<br/>using gyroscope]
 
-F --> G{Unexpected deviation}
-G -->|Yes| H[Obstacle detected]
-G -->|No| I[Path clear]
+    B --> C[Measure distance<br/>with ultrasonic sensor]
+
+    C --> D{Distance < threshold?}
+
+    D -->|Yes| E[Record gyro angle]
+    D -->|No| B
+
+    E --> B
+
+    B --> F[Compute angular span]
+    F --> G[Compute average angle]
+
+    G --> H{Width within bounds?}
+
+    H -->|Yes| I[Classify as ore]
+    H -->|No| J[Classify as obstacle]

@@ -1,0 +1,19 @@
+flowchart LR
+    A[Initialize robot<br/>motors, sensors, grid] --> B[Select target ore coordinate]
+
+    B --> C[Pilot 1<br/>Global Navigation]
+    C --> D[Navigate near ore<br/>grid-based]
+
+    D --> E[Stop short of expected ore position]
+    E --> F[Hand control to Pilot 2]
+
+    F --> G[Pilot 2<br/>Local Object Acquisition]
+
+    G -->|Ore acquired| H[Return control to Pilot 1]
+    G -->|No valid ore| I[Skip target<br/>Return control to Pilot 1]
+
+    H --> J[Navigate to box]
+    J --> K[Deposit object]
+
+    K --> L[Recalibrate position<br/>wall + box alignment]
+    L --> B

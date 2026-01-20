@@ -1,10 +1,10 @@
 flowchart LR
-A[Start] --> B[Init EV3]
-B --> C[Init motors]
-C --> D[Init sensors]
-D --> E[Robot state init]
-E --> F[Navigate to item]
-F --> G{Holding item}
-G -->|Yes| H[Navigate to box]
-H --> I[Drop object]
-G -->|No| J[End]
+    A[Maintain grid position] --> B[Compute target path]
+
+    B --> C[Account for orientation]
+    C --> D[Drive long-range motion]
+
+    D --> E[Reach precomputed stopping point]
+    E --> F[Assume ore nearby<br/>but not exact]
+
+    F --> G[Hand control to Pilot 2]

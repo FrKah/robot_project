@@ -1,35 +1,9 @@
-import { useEffect, useRef } from "react";
-
 export const RobotArchitecture = () => {
-  const observerRef = useRef(null);
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -100px 0px" }
-    );
-
-    const elements = document.querySelectorAll(".fade-in-section");
-    elements.forEach((el) => observerRef.current.observe(el));
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
-
   return (
     <main className="mx-auto max-w-6xl px-6 py-16 space-y-16">
 
       {/* Page header */}
-      <header className="text-center space-y-4 fade-in-section">
+      <header className="text-center space-y-4">
         <h1 className="text-5xl font-bold">
           Robot Architecture
         </h1>
@@ -39,7 +13,7 @@ export const RobotArchitecture = () => {
       </header>
 
       {/* PLATFORM OVERVIEW */}
-      <section className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/20 fade-in-section">
+      <section className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/20">
         <div className="card-body space-y-4">
           <h2 className="text-2xl font-semibold">
             EV3 Platform Overview
@@ -58,12 +32,12 @@ export const RobotArchitecture = () => {
 
       {/* ACTUATION */}
       <section className="space-y-10">
-        <h2 className="text-3xl font-semibold fade-in-section">
+        <h2 className="text-3xl font-semibold">
           Actuation System
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-3">
               <h3 className="text-xl font-semibold">
                 Drive Motors & Locomotion
@@ -76,7 +50,7 @@ export const RobotArchitecture = () => {
             </div>
           </div>
 
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-3">
               <h3 className="text-xl font-semibold">
                 Grabber and Lift Mechanism
@@ -101,7 +75,7 @@ export const RobotArchitecture = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-3">
               <h3 className="text-xl font-semibold">
                 Ultrasonic Sensor
@@ -117,7 +91,7 @@ export const RobotArchitecture = () => {
             </div>
           </div>
 
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-3">
               <h3 className="text-xl font-semibold">
                 Gyroscope Sensor
@@ -138,12 +112,12 @@ export const RobotArchitecture = () => {
 
       {/* MECHANICAL DESIGN */}
       <section className="space-y-10">
-        <h2 className="text-3xl font-semibold fade-in-section">
+        <h2 className="text-3xl font-semibold">
           Mechanical Design Choices
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-4">
               <h2 className="text-2xl font-semibold">
                 The Grabber
@@ -160,7 +134,7 @@ export const RobotArchitecture = () => {
               </div>
             </div>
           </div>
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-4">
               <h2 className="text-2xl font-semibold">
                 The Lifter
@@ -177,7 +151,7 @@ export const RobotArchitecture = () => {
               </div>
             </div>
           </div>
-          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30 fade-in-section">
+          <div className="card bg-gradient-to-br from-base-200 to-base-300 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/30">
             <div className="card-body space-y-4">
               <h2 className="text-2xl font-semibold">
                 The Movement Mechanism
