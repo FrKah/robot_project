@@ -4,13 +4,18 @@ import { FaPlay, FaImage, FaVideo } from "react-icons/fa";
 const media = [
   {
     type: "image",
-    src: "/media/robot1.jpg",
-    title: "Happy Robot"
+    src: "/media/gripper_rotation.gif",
+    title: "Grabber Architecture"
   },
   {
     type: "image",
-    src: "/media/gripper_rotation.gif",
-    title: "Grabber Architecture"
+    src: "/media/lifter_rotation.gif",
+    title: "Lifter Architecture"
+  },
+  {
+    type: "image",
+    src: "/media/wheels_rotation.gif",
+    title: "Wheels Architecture"
   },
   {
     type: "video",
@@ -26,6 +31,21 @@ const media = [
     type: "video",
     src: "/media/pickup_to_box.mp4",
     title: "Pickup to box"
+  },
+  {
+    type: "image",
+    src: "/media/robot1.jpg",
+    title: "Happy Robot"
+  },
+  {
+    type: "image",
+    src: "/media/best_score.jpg",
+    title: "Highest score in a competition round!"
+  },
+  {
+    type: "video",
+    src: "/media/pilote_2_in_action.mov",
+    title: "Pilote 2 in action"
   },
 ];
 
